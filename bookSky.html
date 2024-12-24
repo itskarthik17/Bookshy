@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BookSky</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style_book.css">
+        <script src="js_book.js"></script>
+    </head>
+    <body>
+        <nav class="header">
+            <h1>BookSky</h1>
+            <ul>
+                <li>Home</li>
+                <li> | </li>
+                <li>About Us</li>
+                <li> | </li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="book">
+                <h2>On my Way</h2>
+                <h3>Karthik</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut eveniet placeat velit asperiores tenetur, aliquam a sed odit nisi!</p>
+                <button onclick="deleteItem(event)">Remove</button>
+            </div>
+        </div>
+        <div class="overLayer" id="popUp_overLayer">
+        </div>
+        <div class="popUp" id="">
+            <h2>ADD BOOK</h2>
+            <form>
+                <input type="text" placeholder="Book title" id="book-title-input">
+                <input type="text" placeholder="Book Author" id="book-author-input">
+                <textarea placeholder="Short Description within 20 words" id="book-desc"></textarea>
+                <button id="add_book_button" onclick="insert_book(event)">Add</button> 
+                <button id="cancel-popup" onclick="cancel_popup(event)">Cancel</button>
+            </form>
+        </div>
+        <button class="add-button" id="add" onclick="add_book()">+</button>
+    </body>
+</html>
